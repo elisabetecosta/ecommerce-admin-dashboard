@@ -8,7 +8,7 @@ import { CldUploadWidget } from "next-cloudinary";
 import { Button } from "@/components/ui/button";
 
 interface ImageUploadProps {
-    disabled: boolean;
+    disabled?: boolean;
     onChange: (value: string) => void;
     onRemove: (value: string) => void;
     value: string[];
@@ -69,7 +69,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
 
                         const onClick = () => {
                             open();
-                        }
+                        };
 
                         return (
                             <Button
@@ -81,7 +81,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
                                 <ImagePlus className="mr-2 h-4 w-4" />
                                 Upload an Image
                             </Button>
-                        )
+                        );
                     }}
             </CldUploadWidget>
         </div>
