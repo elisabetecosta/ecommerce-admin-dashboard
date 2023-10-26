@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ecommerce Admin Dashboard
+
+This is a Next.js CMS for ecommerce stores. For the frontend example store, click here.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to test the app on your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- npm or yarn
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/elisabetecosta/ecommerce-admin-dashboard.git
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    cd ecommerce-admin-dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install the dependencies:
 
-## Deploy on Vercel
+    ```bash
+    npm install
+    # or
+    yarn install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Setting up .env file
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```bash
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+  CLERK_SECRET_KEY=
+  NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+  NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+  
+  DATABASE_URL=''
+  NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+  FRONTEND_STORE_URL=http://localhost:3001
+  STRIPE_API_KEY=
+  STRIPE_WEBHOOK_SECRET=
+
+### Connecting to PlanetScale and Pushing Prisma
+
+  ```bash
+  npx prisma generate
+  npx prisma db push
+
+### Running the App
+
+1. Start the development server:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    
+2. Open the app on your browser:
+
+- After starting the development server, you should be able to access the app through localhost, usually on port 3000.
+
+## Built With
+- Next.js
+- TypeScript
+- TailwindCSS
+- Prisma + MySQL
+- Planet Scale
+- Stripe
+
+## Contributing
+Feel free to contribute to this project! You can open issues for bugs or suggestions and submit pull requests to improve the app.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/elisabetecosta/ecommerce-admin-dashboard/blob/main/LICENSE.txt) file for details.
