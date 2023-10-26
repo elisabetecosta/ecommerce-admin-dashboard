@@ -65,7 +65,7 @@ Follow these steps to test the app on your local machine.
     
 2. Open the app on your browser:
 
-- After starting the development server, you should be able to access the app through localhost, usually on port 3000.
+- After starting the development server, you should be able to access the app through localhost, usually on port 3000 (http://localhost:3000)
 
 ## Built With
 - Next.js
