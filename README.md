@@ -1,6 +1,6 @@
 # Ecommerce Admin Dashboard
 
-This is a Next.js CMS for ecommerce stores. For the frontend example store, click here.
+This is a Next.js CMS for ecommerce stores. For the frontend example store, click [here](https://github.com/elisabetecosta/ecommerce-store).
 
 ## Getting Started
 
@@ -45,12 +45,14 @@ Follow these steps to test the app on your local machine.
   FRONTEND_STORE_URL=http://localhost:3001
   STRIPE_API_KEY=
   STRIPE_WEBHOOK_SECRET=
+  ```
 
 ### Connecting to PlanetScale and Pushing Prisma
 
   ```bash
   npx prisma generate
   npx prisma db push
+   ```
 
 ### Running the App
 
