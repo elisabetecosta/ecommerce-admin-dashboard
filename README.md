@@ -47,7 +47,7 @@ Follow these steps to test the app on your local machine.
   STRIPE_WEBHOOK_SECRET=
   ```
 
-### Connecting to PlanetScale and Pushing Prisma
+### Connecting to Database and Pushing Prisma Schema
 
   ```bash
   npx prisma generate
@@ -71,8 +71,8 @@ Follow these steps to test the app on your local machine.
 - Next.js
 - TypeScript
 - TailwindCSS
-- Prisma + MySQL
-- Planet Scale
+- Prisma + PostgreSQL
+- Neon
 - Stripe
 
 ## Contributing
